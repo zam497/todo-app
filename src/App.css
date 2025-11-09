@@ -1,0 +1,115 @@
+/* --- Global Styles and Background --- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f0f0; /* Light background for the overall page */
+}
+
+.app-container{
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  position: relative;
+  left: 90%;
+}
+
+/* --- Main To-Do Box --- */
+.todo-box {
+  width: 90%;
+  /* max-width: 500px; */
+  background-color: #240046; /* Deep purple background */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  color: white; /* Default text color for the box */
+}
+
+.todo-title {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* --- Input Group (Input + Button) --- */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 2px solid #5a189a; /* Border color */
+  border-radius: 6px;
+  background-color: #38006b; /* Darker input background */
+  color: white;
+  font-size: 1em;
+}
+
+.task-input::placeholder {
+  color: #a0a0a0;
+}
+
+.add-task-btn {
+  background-color: #e0aa34; /* Yellow/Gold Add button color */
+  color: #240046; /* Text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-task-btn:hover {
+  background-color: #ffc300;
+}
+
+/* --- Task List Items --- */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5a189a; /* Task item background color */
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.task-name {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: #e0aa34; /* Icon color (Yellow/Gold) */
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.icon-btn:hover {
+  color: white;
+}
